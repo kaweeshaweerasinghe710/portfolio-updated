@@ -50,7 +50,7 @@ export default function About() {
               Whether it's optimizing a subtle animation or designing a complex database schema, I enjoy tackling challenges from end to end.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, participating in hackathons, or contributing to open-source projects.
+              When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.
             </p>
           </motion.div>
 

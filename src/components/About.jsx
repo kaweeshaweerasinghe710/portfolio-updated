@@ -42,7 +42,7 @@ export default function About() {
             className="space-y-6 text-lg text-slate-300"
           >
             <p>
-              Hello! I'm an enthusiastic Software Engineering student currently in my 2nd year at the <span className="text-white font-semibold">University of Moratuwa</span>.
+              Hello! I'm an enthusiastic IT student currently in my 2nd year at the <span className="text-2xl  font-semibold">University of Moratuwa</span>.
               My journey in tech began with a curiosity about how the web works, which quickly evolved into a passion for full-stack development.
             </p>
             <p>

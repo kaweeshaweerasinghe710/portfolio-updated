@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Terminal, Github, Linkedin } from 'lucide-react';
+import img from "../assets/my img.jpg";
 
 const MediumIcon = ({ size }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -9,22 +10,22 @@ const MediumIcon = ({ size }) => (
 );
 
 export default function Hero() {
-  const jobTitle = "Full Stack Engineer";
+  const jobTitle = "Full Stack       Developer";
   const titleLetters = jobTitle.split("");
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-24 pb-12 w-full bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pl-0 md:pl-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center lg:items-start pt-10">
           
-          <div className="text-left order-2 lg:order-1 text-center lg:text-left">
+          <div className="text-left order-2 lg:order-1 text-center lg:text-left mt-8 lg:mt-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="flex justify-center lg:justify-start mb-6"
             >
-              <span className="px-4 py-2 bg-slate-900 border-l-4 border-primary text-sm font-bold text-slate-300 flex items-center gap-2 rounded-lg">
+              <span className="px-5 py-2 bg-slate-900 border-l-4 border-primary text-sm font-bold text-slate-300 inline-flex items-center gap-2 rounded-lg mb-4">
                 <Terminal size={16} className="text-primary" />
                 Available for new opportunities
               </span>
@@ -34,30 +35,30 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-2"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3"
             >
               Hi, I'm <br/>
               <span className="text-white mt-2 block">Kaweesha Weerasinghe</span>
             </motion.h1>
             
-            <div className="relative flex flex-wrap justify-center lg:justify-start mb-6 mt-4 h-16 sm:h-20 lg:h-24">
+            <div className="relative flex flex-wrap justify-center lg:justify-start mb-6 mt-6 h-12 sm:h-16 lg:h-20 mb-35 ">
               {titleLetters.map((letter, i) => (
                 <motion.span 
                   key={i}
-                  className={`text-4xl md:text-5xl lg:text-6xl leading-none font-black uppercase tracking-widest ${letter === ' ' ? 'w-3 md:w-4' : ''}`}
+                  className={`text-4xl md:text-5xl lg:text-6xl  leading-none font-black uppercase tracking-widest ${letter === ' ' ? 'w-3 md:w-5' : ''}`}
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ 
                     opacity: 1, 
                     scale: 1,
                     color: ["#ffffff", "#0f172a"], 
                     textShadow: [
-                      `0px 0px 15px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(56, 189, 248, 0.8)`, // Reintroduced bright shine
-                      `4px 4px 6px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.1), 0px 5px 15px rgba(56, 189, 248, 0.3)` // Rests as shadow
+                      `0px 0px 15px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(56, 189, 248, 0.8)`, // Bright shine
+                      `4px 4px 6px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.1), 0px 5px 15px rgba(56, 189, 248, 0.3)` 
                     ]
                   }}
                   transition={{ 
                     duration: 0.8, 
-                    delay: 0.2 + (i * 0.05), 
+                    delay: 0.4 + (i * 0.05), 
                     ease: "easeOut"
                   }}
                 >
@@ -66,63 +67,57 @@ export default function Hero() {
               ))}
             </div>
             
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 font-medium"
-            >
-              Currently a 2nd-year undergraduate at the University of Moratuwa. I build scalable web applications and intuitive user interfaces.
-            </motion.p>
             
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="mt-8 flex gap-4 justify-center lg:justify-start items-center"
-             >
-                <a href="#" className="p-3 bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg">
-                  <Github size={22}/>
-                </a>
-                <a href="#" className="p-3 bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg">
-                  <Linkedin size={22}/>
-                </a>
-                <a href="#" className="p-3 bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors rounded-lg">
-                  <MediumIcon size={22}/>
-                </a>
-             </motion.div>
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="mt-10 flex gap-4 flex-wrap justify-center lg:justify-start"
+              className="mt-10 flex gap-4 flex-wrap justify-center lg:justify-start margin-top-50000"
             >
               <a href="#projects" className="px-8 py-3 bg-primary text-slate-950 font-bold hover:bg-white transition-colors flex items-center gap-2 group rounded-lg">
                 View Work
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#contact" className="px-8 py-3 border-2 border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors rounded-lg">
+              <a href="#contact" className="px-8 py-3 border-2 border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors rounded-lg block">
                 Contact Me
               </a>
             </motion.div>
           </div>
 
-          <motion.div 
-             initial={{ opacity: 0, x: 20 }}
-             animate={{ opacity: 1, x: 0 }}
-             transition={{ duration: 0.6, delay: 0.3 }}
-             className="relative mx-auto max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md w-full order-1 lg:order-2 px-8 lg:px-0"
-          >
-             <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-slate-800 p-2 bg-slate-900 group">
-                <div className="absolute inset-0 bg-primary/5 mix-blend-overlay z-10 transition-opacity duration-500 group-hover:opacity-0"></div>
-                <img 
-                  src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=800"
-                  alt="My Profile"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 rounded-lg"
-                />
-             </div>
-          </motion.div>
+          <div className="order-1 lg:order-2 flex flex-col items-center">
+              <motion.div 
+                 initial={{ opacity: 0, scale: 0.9 }}
+                 animate={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.6, delay: 0.3 }}
+                 className="relative w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-[340px]"
+              >
+                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-slate-800 p-2 bg-slate-900 group shadow-lg">
+                    <img 
+                      src={img}
+                      alt="My Profile"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 rounded-xl"
+                    />
+                 </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="mt-6 flex gap-4 justify-center"
+               >
+                  <a href="https://github.com/kaweeshaweerasinghe710" className="p-3 bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors rounded-lg shadow-sm">
+                    <Github size={22}/>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kaweesha-weerasinghe-749850328" className="p-3 bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors rounded-lg shadow-sm">
+                    <Linkedin size={22}/>
+                  </a>
+                  <a href="https://medium.com/@kaweeshaweerasinghe2002" className="p-3 bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors rounded-lg shadow-sm">
+                    <MediumIcon size={22}/>
+                  </a>
+               </motion.div>
+          </div>
           
         </div>
       </div>

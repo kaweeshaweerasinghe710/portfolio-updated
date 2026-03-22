@@ -85,18 +85,18 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          <div className="order-1 lg:order-2 flex flex-col items-center">
+          <div className="order-1 lg:order-2 flex flex-col items-center ">
               <motion.div 
                  initial={{ opacity: 0, scale: 0.9 }}
                  animate={{ opacity: 1, scale: 1 }}
                  transition={{ duration: 0.6, delay: 0.3 }}
-                 className="relative w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-[340px]"
+                 className="relative w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-[340px] shadow-[0_0_20px_rgba(56,189,248,0.5)]"
               >
-                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-slate-800 p-2 bg-slate-900 group shadow-lg">
+                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-slate-800 p-2 bg-slate-900 group shadow-lg ">
                     <img 
                       src={img}
                       alt="My Profile"
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 rounded-xl"
+                      className="w-full h-full object-cover  transition-transform duration-700 group-hover:scale-105 rounded-xl"
                     />
                  </div>
               </motion.div>

@@ -13,7 +13,7 @@ const projectsData = [
     description: "Every year, thousands of patients face critical situations due to blood shortages. Hospitals struggle to find matching donors quickly, and donors often don’t know when their blood type is urgently needed. Heartline bridges this gap by connecting donors, hospitals, and blood banks on a single platform. For Donors: register and complete verified profiles, receive real-time SMS & in-app notifications for urgent blood needs, view and respond to requests, join donation events, track donation history, achievements, and leaderboard ranking.,can get help from chatbot For Hospitals: create urgent blood requests, get  donor suggestions ranked by blood type and distance, manage events, and track completed donations. For Admins: verify users, manage all accounts, monitor activity, and generate reports.Key features include GPS-based donor-hospital matching , role-based access, multi-step profile completion,                    and real-time notifications",
     image: project_1,
     tags: ["React","Node.js","Express", "MongoDB","twillio","chatbot","GPS","cloudinary","Docker","JWT Authentication"],
-    demoUrl: "https://demo-taskapp.example.com",
+    demoUrl: "https://youtu.be/ONpm3Kqg5q8",
     githubUrl: "https://github.com/Studio-2Bit/heartline"
   },
   {
@@ -22,7 +22,7 @@ const projectsData = [
     description: "E-commerce Shoe Shop Website is a full-stack MERN application designed to deliver a secure, responsive, and user-friendly online shopping experience.Users can browse shoe collections, view product details, manage carts, place orders, and communicate directly with the admin through an integrated messaging system.The admin panel supports complete management of products, orders, users, and customer messages, enabling smooth daily operations and better user engagement. Built with React, Node.js, Express, and MongoDB, this project showcases scalable full-stack development, secure authentication, and responsive UI design",
     image:project_2,
     tags: ["React", "Node.js","Express.js", "MongoDB"],
-    demoUrl: "https://demo-ecommerce.example.com",
+    demoUrl: "https://youtu.be/PMW1ZnZKncQ",
     githubUrl: "https://github.com/kaweeshaweerasinghe710/shoe-shop-website"
   },
 

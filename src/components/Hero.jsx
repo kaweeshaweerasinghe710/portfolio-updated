@@ -1,6 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Terminal, Github, Linkedin } from 'lucide-react';
+import { motion,AnimatePresence } from 'framer-motion';
+import { ArrowRight, Terminal, Github, Linkedin,Download  } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import img from "../assets/my img.jpg";
 
 const MediumIcon = ({ size }) => (
@@ -79,9 +80,13 @@ export default function Hero() {
                 View Work
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#contact" className="px-8 py-3 border-2 border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors rounded-lg block">
-                Contact Me
-              </a>
+              <a href="/CV2.pdf"
+             download="Kaweesha_Weerasinghe_CV.pdf"
+              className="px-8 py-3 border-2 border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors rounded-lg flex items-center gap-2 group"
+              >
+                Download CV
+                 <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
+               </a>
             </motion.div>
           </div>
 

@@ -41,7 +41,7 @@ export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
   return (
-    <section id="projects" className="py-20 bg-slate-900 border-t border-slate-800">
+    <section id="projects" className="py-20 bg-slate-950 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ export default function Projects() {
               transition={{ delay: index * 0.1 }}
               onHoverStart={() => setHoveredProject(project.id)}
               onHoverEnd={() => setHoveredProject(null)}
-              className="group relative rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/50 flex flex-col h-full"
+              className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-700/50 flex flex-col h-full"
             >
               {/* Image Container with Overlay */}
               <div className="relative h-48 w-full overflow-hidden">

@@ -5,7 +5,7 @@ import { GraduationCap, MapPin, Calendar, CheckSquare, Award, Star } from 'lucid
 const educationData = [
   {
     id: 1,
-    year: "2019",
+    year: "2018",
     degree: "G.C.E. Ordinary Level",
     institution: "Sujatha Vidyalaya, Matara",
     gpa: "9 A's",
@@ -22,7 +22,7 @@ const educationData = [
     gpa: "1.758 Z-Score",
     description: "Graduated with top honors, specializing in advanced mathematics and physics.",
     icon: Award,
-    tag: "Sciences",
+    tag: "Science Stream",
     color: "#818cf8",
   },
   {
@@ -30,7 +30,7 @@ const educationData = [
     year: "2024",
     degree: "BSc (Hons) in Information Technology",
     institution: "University of Moratuwa",
-    gpa: "GPA: 3.52",
+    gpa: "GPA: 3.56",
     description: "Pursuing a comprehensive curriculum in algorithms, data structures, OOP, full-stack web technologies, and software architecture.",
     icon: GraduationCap,
     tag: "Undergraduate",
@@ -82,7 +82,6 @@ export default function Education() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-       
           <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight">
             Education <span className="text-primary">Timeline</span>
           </h2>
@@ -113,7 +112,7 @@ export default function Education() {
                     <div
                       className="w-0.5 mt-1"
                       style={{
-                        height: 56,
+                        height: 96,
                         background: index < activeStep ? edu.color : "#1e293b"
                       }}
                     />
@@ -144,8 +143,7 @@ export default function Education() {
             ))}
           </motion.div>
 
-          {/* Right: Detail Card */}
-          <div className="h-[340px] flex items-center">
+          <div className="h-[520px] flex items-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeStep}
@@ -162,7 +160,7 @@ export default function Education() {
                 />
 
                 {/* Watermark icon */}
-                <div className="absolute -bottom-4 -right-4 opacity-[0.04]">
+                <div className="absolute -bottom-1 -right-1 opacity-[0.04]">
                   {React.createElement(educationData[activeStep].icon, { size: 160, color: "white" })}
                 </div>
 
@@ -190,8 +188,17 @@ export default function Education() {
                     <Calendar size={13} className="text-indigo-400" />
                     {educationData[activeStep].year}
                   </div>
-                  <div className="flex items-center gap-2 text-xs font-semibold bg-slate-800 border border-slate-700 px-3 py-2 rounded-lg text-slate-300">
-                    <Star size={13} className="text-yellow-400" />
+
+                  
+                  <div
+                    className="flex items-center gap-2 text-xs font-black px-3 py-2 rounded-lg"
+                    style={{
+                      background: `${educationData[activeStep].color}22`,
+                      border: `1.5px solid ${educationData[activeStep].color}`,
+                      color: educationData[activeStep].color,
+                    }}
+                  >
+                    <Star size={13} fill={educationData[activeStep].color} style={{ color: educationData[activeStep].color }} />
                     {educationData[activeStep].gpa}
                   </div>
                 </div>

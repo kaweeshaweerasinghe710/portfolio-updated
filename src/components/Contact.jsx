@@ -120,7 +120,7 @@ export default function Contact() {
               </div>
 
               {/* Terminal Body */}
-              <div className="p-6 md:p-8 font-mono text-sm md:text-base text-slate-300 min-h-[400px]">
+              <div className="p-6 md:p-8 font-mono text-sm md:text-base text-slate-300 min-h-[400px] ">
                 <div className="mb-6 space-y-2">
                   <p className="text-primary">Loading secure envelope protocol...</p>
                   <p className="text-slate-400">$ ./transmit_message.sh</p>

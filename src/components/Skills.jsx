@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Layout, FileCode, Paintbrush, Database, Server, Cpu, Navigation, GitBranch, Terminal, Figma, Box, Bot } from 'lucide-react';
+import { Globe, Layout, FileCode, Paintbrush, Database, Server, Cpu, Navigation, GitBranch, Terminal, Figma, Box, Bot,Container } from 'lucide-react';
 
 const skillsData = [
   {
@@ -32,7 +32,8 @@ const skillsData = [
       { name: "AI Tools", level: 80, icon: <Bot size={18} /> },
       { name: "Vite", level: 85, icon: <Terminal size={18} /> },
       { name: "Figma", level: 75, icon: <Figma size={18} /> },
-      { name: "Postman", level: 90, icon: <Box size={18} /> }
+      { name: "Postman", level: 90, icon: <Box size={18} /> },
+      { name: "Docker", level: 70, icon: <Container size={18} /> }
     ]
   }
 ];
@@ -61,7 +62,7 @@ export default function Skills() {
               transition={{ delay: groupIndex * 0.2 }}
               className="bg-slate-900 rounded-2xl p-8 border border-slate-700/50 hover:border-primary/50 transition-colors shadow-lg"
             >
-              <h3 className="text-2xl font-semibold text-white mb-6 border-b border-slate-700 pb-3">
+              <h3 className="text-2xl font-semibold text-white mb-6 border-b border-slate-800 pb-3">
                 {skillGroup.category}
               </h3>
               <div className="space-y-6">
